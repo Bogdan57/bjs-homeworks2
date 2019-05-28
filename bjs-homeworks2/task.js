@@ -22,7 +22,7 @@ let c = 48;
 getResult(a, b, c);
 
 
-
+function getAverageMark(marks){
 if (marks.length > 5) {
   console.log('количество оценок больше пяти');
   do {
@@ -38,3 +38,4 @@ for (let i = 0; i < marks.length; i++) {
  let averageMark = sum / marks.length;
 
  return averageMark
+}
