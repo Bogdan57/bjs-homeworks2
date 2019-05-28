@@ -23,20 +23,18 @@ getResult(a, b, c);
 
 
 
-function getAverageMark(marks){
-  const res = [];
-    for (let i = 5; i < marks.length ; i++) {
-      console.log(marks)
-  }
-   if (marks.length > 5) {
-    console.log('количество оценок больше 5')
-  }
-  else {
-    marks = [1,2,3,4,5,6,7,8,9];
-	 console.log(marks.array_splice(5));
-  }
-   
-  return res;  
+if (marks.length > 5) {
+  console.log('количество оценок больше пяти');
+  do {
+    marks.pop()
+  } while (marks.length > 5);
 }
 
-console.log(getAverageMark([1,2,3,4,5,6,7,8,9]))
+ let sum = 0;
+for (let i = 0; i < marks.length; i++) {
+  sum += marks[i];
+}
+
+ let averageMark = sum / marks.length;
+
+ return averageMark
